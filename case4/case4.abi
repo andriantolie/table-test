@@ -1,0 +1,34 @@
+{
+  "types": [{
+      "newTypeName": "AccountName",
+      "type": "Name"
+    }
+  ],
+  "structs": [{
+      "name": "foo",
+      "base": "",
+      "fields": {
+      }
+    },{
+      "name": "record",
+      "base": "",
+      "fields": {
+        "key": "UInt64",
+        "value": "UInt64"
+      }
+    }
+  ],
+  "actions": [{
+      "action": "foo",
+      "type": "foo"
+    }
+  ],
+  "tables": [{
+      "table": "case4table",
+      "type": "record",
+      "indextype": "i64",
+      "keynames" : ["key"],
+      "keytypes" : ["UInt64"]
+    }
+  ]
+}

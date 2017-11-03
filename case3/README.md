@@ -1,4 +1,4 @@
-# Case 2
+# Case 3
 
 ## ATC (Acceptance Test Criteria)
 - Use a valid table that matches ABI
