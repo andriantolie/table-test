@@ -7,10 +7,10 @@
 
 ## Command Run
 ```
-eosc create account inita case3 EOS4toFS3YXEQCkuuw1aqDLrtHim86Gz9u3hBdcBw5KNPZcursVHq EOS7d9A3uLe6As66jzN8j44TXJUqJSK3bFjjEEqR4oTvNAB3iM9SA -s
-eoscpp -o case3.wast case3.cpp
-eosc set contract case3 case3.wast case3.abi -s
-eosc push message case3 foo "{}" -S case3  -s
+eosc create account inita case4 EOS4toFS3YXEQCkuuw1aqDLrtHim86Gz9u3hBdcBw5KNPZcursVHq EOS7d9A3uLe6As66jzN8j44TXJUqJSK3bFjjEEqR4oTvNAB3iM9SA -s
+eoscpp -o case4.wast case4.cpp
+eosc set contract case4 case4.wast case4.abi -s
+eosc push message case4 foo "{}" -S case4  -s
 ```
 
 
