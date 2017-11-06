@@ -76,12 +76,12 @@ extern "C" {
         // assert(lower_bound_record.value == 200, "Lower Bound Record is Invalid");
 
         // case3::record upper_bound_record;
-        // bool get_ub_result = case3::Case3Table::PrimaryIndex::upper_bound(8, upper_bound_record);
+        // bool get_ub_result = case3::Case3Table::PrimaryIndex::upper_bound(2, upper_bound_record);
         // eos::print("upper bound record");
         // eos::print(upper_bound_record.key);
         // assert(get_ub_result, "Get Upper Bound Record Fails");
-        // assert(upper_bound_record.key == 7, "Upper Bound Records is Invalid");
-        // assert(upper_bound_record.value == 400, "Upper Bound Recorddd is Invalid");
+        // assert(upper_bound_record.key == 3, "Upper Bound Records is Invalid");
+        // assert(upper_bound_record.value == 200, "Upper Bound Recorddd is Invalid");
 
          case3::record updated_record;
          updated_record.key = 1;
