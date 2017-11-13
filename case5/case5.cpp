@@ -77,8 +77,8 @@ extern "C" {
 
         // case5::record upper_bound_record;
         // bool get_ub_result = case5::Case5Table::PrimaryIndex::upper_bound(2, upper_bound_record);
-        // eos::print("upper bound record");
-        // eos::print(upper_bound_record.key);
+        // eosio::print("upper bound record");
+        // eosio::print(upper_bound_record.key);
         // assert(get_ub_result, "Get Upper Bound Record Fails");
         // assert(upper_bound_record.key == 3, "Upper Bound Records is Invalid");
         // assert(upper_bound_record.value == 200, "Upper Bound Recorddd is Invalid");
@@ -122,12 +122,12 @@ extern "C" {
      *  This method is called once when the contract is published or updated.
      */
     void init()  {
-       eos::print( "Init World!\n" );
+       eosio::print( "Init World!\n" );
     }
 
     /// The apply method implements the dispatch of events to this contract
     void apply( uint64_t code, uint64_t action ) {
-       eos::print( "Hello World: ", eos::Name(code), "->", eos::Name(action), "\n" );
+       eosio::print( "Hello World: ", eosio::Name(code), "->", eosio::Name(action), "\n" );
        if (code == N(case5)) {
            if (action == N(foocase3)) {
             apply_foocase3();

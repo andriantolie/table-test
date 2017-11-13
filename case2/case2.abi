@@ -1,7 +1,7 @@
 {
   "types": [{
-      "newTypeName": "AccountName",
-      "type": "Name"
+      "newTypeName": "account_name",
+      "type": "name"
     }
   ],
   "structs": [{
@@ -13,13 +13,13 @@
       "name": "record",
       "base": "",
       "fields": {
-        "key": "UInt64",
-        "value": "UInt64"
+        "key": "uint64",
+        "value": "uint64"
       }
     }
   ],
   "actions": [{
-      "action": "foo",
+      "action_name": "foo",
       "type": "foo"
     }
   ],

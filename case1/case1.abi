@@ -1,28 +1,28 @@
 {
   "types": [{
-      "newTypeName": "AccountName",
-      "type": "Name"
+      "newTypeName": "account_name",
+      "type": "name"
     }
   ],
   "structs": [{
       "name": "transfer",
       "base": "",
       "fields": {
-        "from": "AccountName",
-        "to": "AccountName",
-        "amount": "UInt64"
+        "from": "account_name",
+        "to": "account_name",
+        "amount": "uint64"
       }
     },{
       "name": "record",
       "base": "",
       "fields": {
-        "key": "UInt64",
-        "value": "UInt64"
+        "key": "uint64",
+        "value": "uint64"
       }
     }
   ],
   "actions": [{
-      "action": "transfer",
+      "action_name": "transfer",
       "type": "transfer"
     }
   ],
@@ -31,13 +31,13 @@
       "type": "record",
       "indextype": "i64",
       "keynames" : ["key"],
-      "keytypes" : ["UInt64"]
+      "keytypes" : ["uint64"]
     }, {
       "table": "case1table",
       "type": "record",
       "indextype": "i64",
       "keynames" : ["key"],
-      "keytypes" : ["UInt64"]
+      "keytypes" : ["uint64"]
     }
   ]
 }
